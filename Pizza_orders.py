@@ -1,40 +1,27 @@
-print("Thankyou for choosing Python pizza deliveries!!")
-#
-size = input("What size do you want? S, M, OR L?\n")
+print("Welcome to Python pizza deliveries!!")
+
 amount = 0
+
+size = input("What size do you want? S, M, OR L?\n")
+pepperoni = input("Do you want pepperoni? (Y or N): ")
+cheese = input("Do you want cheese slice? (Y or N): ")
+
 if size == "S":
-    amount + 15 
-    pepperoni = input("Do you want Pepperoni?(Y or N) +2: ")
-    if pepperoni == "Y":
-        amount + 2
-        Cheese = input("Do you want cheese on your pizza?(Y or N) +1: ")
-        if Cheese == "Y":
-            amount + 1
-        else:
-            print(amount)
+    amount += 15
+elif size == "M":
+    amount += 20
+else :
+    amount += 25
+
+if pepperoni == "Y":
+    if size == "S":
+        amount += 2
     else:
-        print(amount)
+        amount += 3
+    
+if cheese == "Y":
+    amount += 1
 else:
-    print(amount)
+    amount += 0
 
-if size == "M": 
-    amount + 20
-    pepperoni = input("Do you want Pepperoni?(Y or N) +3: ")
-    if pepperoni == "Y":
-        amount + 3
-        Cheese = input("Do you want cheese on your pizza?(Y or N) +1: ")
-        if Cheese == "Y":
-            amount + 1
-    else:
-        print(amount)
-
-if size == "L": 
-    amount + 25
-    pepperoni = input("Do you want Pepperoni?(Y or N) +3: ")
-    if pepperoni == "Y":
-        amount + 3
-        Cheese = input("Do you want cheese on your pizza?(Y or N) +1: ")
-        if Cheese == "Y":
-            amount + 1
-    else:
-        print(amount)
+print(f"Thankyou for choosing Python pizza, Your total bill will be {amount}.")
