@@ -23,9 +23,9 @@ if a == "right":
         print("You arrive at the island safely.")
         c = input("There are 3 doors in front of you. 'Red', 'Blue', 'Green'. Which would you like to enter? ")
         if c == "Red":
-            print("There is no treasure. You loose.")
+            print("Its a room full of fire. Game over.")
         elif c == "Blue":
-            print("There is no treasure. You loose.")
+            print("Its a room full of poisonus animals. Game over.")
         else:
             print("Treasure found. You win!!")
 
