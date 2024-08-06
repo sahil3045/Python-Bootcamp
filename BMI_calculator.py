@@ -13,7 +13,7 @@ elif BMI < 25:
     print("Your BMI is ", BMI, "you have a normal weight.")
 elif BMI < 30:
     print("Your BMI is ", BMI, "you are slightly ooverweight.")
-elif BMI < 35:
+elif BMI < 40:
     print("Your BMI is ", BMI, "you are obese.")
 else:
     print("Your BMI is ", BMI, "you are clinically obese.")
