@@ -29,9 +29,9 @@ scissors = ("""
 images = [rock, paper, scissors]
 print("Welcome to rock paper scissors!!")
 a = int(input("Type 0 for rock, 1 for paper and 2 for scissors:\n"))
-print("You chose: ")
+
 if a >= 3 or a < 0: 
-    print("You typed an invalid number.")
+    print("You typed an invalid number try again.")
 else:
     print(images[a])
     comp = random.randint(0, 2)
