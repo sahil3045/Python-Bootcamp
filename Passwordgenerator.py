@@ -37,8 +37,11 @@ for char in range(0, c):
 
 print(password)
 random.shuffle(password)
-print(str(password))
+print(password)
 
+passw = ""
 for char in password:
-    print(char)
+    passw += char
+
+print(f"Your Password is : {passw}")
         
