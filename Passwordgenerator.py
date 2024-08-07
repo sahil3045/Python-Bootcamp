@@ -38,4 +38,7 @@ for char in range(0, c):
 print(password)
 random.shuffle(password)
 print(str(password))
+
+for char in password:
+    print(char)
         
