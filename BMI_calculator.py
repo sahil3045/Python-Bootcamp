@@ -10,7 +10,7 @@ BMI = weight/a
 if BMI < 18.5:
     print("Your BMI is ", BMI, "you are underweight.")
 elif BMI < 25:
-    print("Your BMI is ", BMI, "you have a normal weight.")
+    print("Your BMI is ", BMI, "you have a normal weight")
 elif BMI < 30:
     print("Your BMI is ", BMI, "you are slightly ooverweight.")
 elif BMI < 40:
