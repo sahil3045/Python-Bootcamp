@@ -1,4 +1,4 @@
-print("Welcome to Python pizza deliveries!!")
+print("Welcome to Python pizza delivery Services!!")
 
 amount = 0
 
