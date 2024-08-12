@@ -9,11 +9,11 @@ for position in range(0, len):
     placeholder += "_"
 print(placeholder)
 
-
+guess = input("Guess the letter: ").lower()
 #print(guess)
+game_over = False
 
-while guess == chosen_word:
-    guess = input("Guess the letter: ").lower()
+while not game_over:
     display = ""
     for letter in chosen_word:
         if letter == guess:
@@ -21,3 +21,6 @@ while guess == chosen_word:
         else:
             display += "_"
     print(display)
+
+    if "_" not in display:
+        print("You win!!")
