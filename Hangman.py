@@ -12,15 +12,17 @@ print(placeholder)
 
 #print(guess)
 game_over = False
+correct_letters = []
 
 while not game_over:
     guess = input("Guess the letter: ").lower()
 
     display = ""
-    
+
     for letter in chosen_word:
         if letter == guess:
             display += letter
+            correct_letters.append(guessf)
         else:
             display += "_"
     print(display)
