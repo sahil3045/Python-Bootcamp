@@ -22,7 +22,7 @@ while not game_over:
     for letter in chosen_word:
         if letter == guess:
             display += letter
-            correct_letters.append(guessf)
+            correct_letters.append(guess)
         else:
             display += "_"
     print(display)
