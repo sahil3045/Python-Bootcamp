@@ -1,4 +1,54 @@
 import random
+stages = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
 print("Welcome to Hangman game.")
 word_list = ["bottle", "phone", "pen", "pencil"]
 chosen_word = random.choice(word_list)
@@ -30,3 +80,5 @@ while not game_over:
     if "_" not in display:
         game_over = True
         print("You win!!")
+
+
