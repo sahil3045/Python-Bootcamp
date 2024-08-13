@@ -54,6 +54,8 @@ word_list = ["bottle", "phone", "pen", "pencil"]
 chosen_word = random.choice(word_list)
 len = len(chosen_word)
 
+lives = 6
+
 placeholder = ""
 for position in range(0, len):
     placeholder += "_"
@@ -73,6 +75,10 @@ while not game_over:
         if letter == guess:
             display += letter
             correct_letters.append(guess)
+        elif letter in correct_letters:
+            display += letter
+        elif letter not in guess:
+            lives - 1
         else:
             display += "_"
     print(display)
