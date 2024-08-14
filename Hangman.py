@@ -77,12 +77,12 @@ while not game_over:
             correct_letters.append(guess)
         elif letter in correct_letters:
             display += letter
-        elif letter not in guess:
-            lives - 1
         else:
             display += "_"
     print(display)
 
+    if guess not in chosen_word:
+        lives - 1
     if "_" not in display:
         game_over = True
         print("You win!!")
