@@ -67,7 +67,11 @@ game_over = False
 correct_letters = []
 
 while not game_over:
+    print("***************<????>/6 Lives left***************")
     guess = input("Guess the letter: ").lower()
+
+    if guess in correct_letters:
+        print("You have already guessed " + guess)
 
     display = ""
 
@@ -81,11 +85,15 @@ while not game_over:
             display += "_"
     print(display)
 
+
     if guess not in chosen_word:
         lives -= 1
+        print("")
         if lives == 0:
             game_over = True
             print("**************You Loose***************")
+
+
     if "_" not in display:
         game_over = True
         print("*************You win***************!!")
