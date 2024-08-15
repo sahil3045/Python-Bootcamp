@@ -82,9 +82,14 @@ while not game_over:
     print(display)
 
     if guess not in chosen_word:
-        lives - 1
+        lives -= 1
+        if lives == 0:
+            game_over = True
+            print("YOu Loose")
     if "_" not in display:
         game_over = True
         print("You win!!")
+
+    print(stages[lives])
 
 
