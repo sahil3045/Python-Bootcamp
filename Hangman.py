@@ -91,7 +91,7 @@ while not game_over:
         print("You guessed " + guess + " that's not in the word. You loose a life.")
         if lives == 0:
             game_over = True
-            print("**************You Loose***************")
+            print(f"**************It was <{chosen_word}>/ You Loose***************")
 
 
     if "_" not in display:
