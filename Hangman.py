@@ -50,7 +50,7 @@ stages = ['''
       |
 =========''']
 print("Welcome to Hangman game.")
-word_list = ["bottle", "phone", "pen", "pencil", "notes", "book", "towel", "watch"]
+word_list = ["bottle", "phone", "pen", "pencil", "notes", "book", "towel", "watch", "movie"]
 chosen_word = random.choice(word_list)
 len = len(chosen_word)
 
