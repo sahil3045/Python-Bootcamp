@@ -70,7 +70,7 @@ while not game_over:
     print(stages[lives])
     
     print(f"***************<????>/{lives} Lives left***************")
-    guess = input("Guess the letter:").lower()
+    guess = input("Guess the letter: ").lower()
 
     if guess in correct_letters:
         print("You have already guessed " + guess)
