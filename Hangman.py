@@ -63,7 +63,7 @@ print(placeholder)
 
 
 #print(guess)
-game_over = False
+game_over = True
 correct_letters = []
 
 while not game_over:
