@@ -1,4 +1,4 @@
-a = int(input("Enter the year: "))
+a = int(input("Enter the year to check weather it is leap year or not: "))
 
 if a%4 == 0:
     if a%100 ==0:
